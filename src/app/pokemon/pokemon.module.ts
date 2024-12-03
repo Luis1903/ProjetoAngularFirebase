@@ -1,23 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { IonicModule } from '@ionic/angular';
+
+import { PokemonPageRoutingModule } from './pokemon-routing.module';
+
+import { PokemonPage } from './pokemon.page';
 import { MenuModule } from '../shared/components/menu/menu.module';
 import { CabecalhoModule } from '../shared/components/cabecalho/cabecalho.module';
-
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
+    PokemonPageRoutingModule,
     MenuModule,
     CabecalhoModule
   ],
-  declarations: [HomePage]
+  declarations: [PokemonPage]
 })
-export class HomePageModule {}
+export class PokemonPageModule {}

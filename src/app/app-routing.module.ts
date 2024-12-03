@@ -10,6 +10,14 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: 'contato',
+    loadChildren: () => import('./contato/contato.module').then( m => m.ContatoPageModule)
+  },
+  {
+    path: 'pokemon',
+    loadChildren: () => import('./pokemon/pokemon.module').then( m => m.PokemonPageModule)
   }
 ];
 
